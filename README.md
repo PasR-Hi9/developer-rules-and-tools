@@ -3,16 +3,17 @@
 
 - [Hi9 Developer Rules and Tools](#hi9-developer-rules-and-tools)
   - [Showcasing our developer environment](#showcasing-our-developer-environment)
-  - [Naming Conventions](#naming-conventions)
-    - [Variable Naming](#variable-naming)
+  - [Variables](#variables)
 
-## Naming Conventions
-### Variable Naming
-We chose camel case with the variable starting with a letter. 
+## Variables
 
-For Example
->
-> let camelCase = 45
-> 
-> const variableName = "Wo King"
->
+* Naming convention is camel case with the variable starting with a letter. 
+
+**Why?**
+> When you are scanning the code your eye catches the variables more easily.
+
+```
+let camelCase = 45
+ 
+const variableName = "Wo King"
+```
