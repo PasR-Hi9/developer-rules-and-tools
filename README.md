@@ -1,49 +1,57 @@
 #  Hi9 Developer Rules and Tools
-## Showcasing our developer environment
+## Showcasing our Developer Environment
 
 - [Hi9 Developer Rules and Tools](#hi9-developer-rules-and-tools)
-  - [Showcasing our developer environment](#showcasing-our-developer-environment)
-  - [Variables](#variables)
-  - [Code Styling](#code-styling)
+  - [Technologies and Tools](#technologies-and-tools)
+  - [GitHub Process](#github-process)
+  - [General Coding Guidelines](#general-coding-guidelines)
+  - [Formatting](#formatting)
+  - [Plugins and Extensions](#plugins-and-extensions)
 
-## Variables
+## Technologies and Tools
 
-* Naming convention is camel case with the variable starting with a letter. 
+ We use the following technologies and tools:
+ - JavaScript (ES6), Typescript, Node.js, React 
+ - Firebase Cloud Functions (TS, Express.js), Google Cloud Functions (Python, Flask), Firebase Hosting 
+ - Google Cloud Scheduler 
+ - Databases: Firestore, Big Query, GunDB 
+ - SendGrid (emails), MessageBird (WhatsApp, FB Messenger) 
+ - Google Maps API, Dialogflow CX API, Google Sheets API 
+ - Git, GitHub, GitHub Actions  
 
-**Why?**
+## GitHub Process 
 
-> When you are scanning the code your eye catches the variables more easily.
+ When working together on GitHub, we use the following procedures and processes:
+  - Create a new branch for each new feature, and then add a merge request once that feature has been tested.
+  - Name branches after the features or issues they address:
+       - Use the "Dev" branch for features under development
+       - Only merge to the "Master" branch when a new version is released
+       - Include an "issue" branch for medium to major bugs
+  - Always include meaningful comments for git commits!
 
-```
-let camelCase = 45
- 
-const variableName = "Wo King"
-```
+## General Coding Guidelines
 
-* let, const will be used as much as possible to declare variables
+Our overall system for working on code involves the following:
+- Use Visual Studio Code as an editor 
+- Use Google Colab when testing Python scripts / sharing with the rest of the team 
+- Always specify the exact version of a package 
+- Use a requirements.txt to save python dependencies 
+- Use 1 tab (worth two spaces) to indent in Python 
 
-**Why?**
+## Formatting
 
-> It helps keep the variables in scope
+To ensure consistency across the team and for ease of reading, our general formatting guidelines are as follows:
 
-```
-let banana = true
+- Use lowerCamelCase to name variables and value functions 
+- Use UpperCamelCase to name functions 
+- Semicolons will not be at the end of commands
+    - So commands look like this
+    - Not this;
 
-const apple = 43
-```
+## Plugins and Extensions
 
-## Code Styling
-
-* Semicolans ; will not be at the end of commands
-
-**Why?**
-
-> Because Willem said so, that's why.
-
-```
-So commands are like this
-
-Not like this;
-```
-
+On VSC, we use the following plugins and extensions:
+- GitLens
+- Bracket Pair Colorizer 2
+- React Extension Pack (https://marketplace.visualstudio.com/items?itemName=jawandarajbir.react-vscode-extension-pack)
 
